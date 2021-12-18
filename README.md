@@ -1,7 +1,7 @@
-# ClassBcReborn
+# ClassBcReborn v1.1.0
 Send bc or hint to every class on spawn
 
-`required Exiled 3.0`
+`required Exiled 4.0`
 
 Please report any bugs to dm discord VersLugia#9038 
 
@@ -10,9 +10,9 @@ Please report any bugs to dm discord VersLugia#9038
 class_broadcast:
 # Is enabled?
   is_enabled: true
-  # Replace broadcast with hint (true = hint)
-  hint: true
-  # the time you want bc or hint to be 
+  # Broadcast, Hint or Window (if not the correct type, it will hint
+  broadcast_type: Window
+  # the time you want bc or hint to be
   bc_time: 7
   # Set class bc text
   class_bc:
