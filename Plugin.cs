@@ -8,8 +8,8 @@ namespace ClassBroadcast
     {
         public override string Name { get; } = "ClassBroadcast";
         public override string Author => "VersLugia";
-        public override Version Version => new Version(1, 0, 0);
-        public override Version RequiredExiledVersion => new Version(3, 0, 0);
+        public override Version Version => new Version(1, 1, 0);
+        public override Version RequiredExiledVersion => new Version(4, 0, 0);
 
         public static Plugin Singleton;
         private EventHandlers events;

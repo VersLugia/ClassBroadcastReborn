@@ -1,4 +1,5 @@
 ﻿using Exiled.Events.EventArgs;
+using MEC;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -13,13 +14,17 @@ namespace ClassBroadcast
         {
             if (Plugin.Singleton.Config.Class_Bc.TryGetValue(ev.NewRole, out string ClassBc))
             {
-                if (Plugin.Singleton.Config.Hint)
+                if (Plugin.Singleton.Config.BroadcastType.Contains("Broadcast"))
                 {
-                    ev.Player.ShowHint(ClassBc, Plugin.Singleton.Config.BcTime);
+                    ev.Player.Broadcast(Plugin.Singleton.Config.BcTime, ClassBc);
+                }
+                else if (Plugin.Singleton.Config.BroadcastType.Contains("Window"))
+                {
+                    Timing.CallDelayed(1f, () => ev.Player.OpenReportWindow(ClassBc));
                 }
                 else
                 {
-                    ev.Player.Broadcast(message: ClassBc, duration: Plugin.Singleton.Config.BcTime);
+                    ev.Player.ShowHint(ClassBc, Plugin.Singleton.Config.BcTime);
                 }
             }
         }
