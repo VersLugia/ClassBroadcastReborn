@@ -3,8 +3,6 @@ Send bc or hint to every class on spawn
 
 `required Exiled 4.0`
 
-Please report any bugs to dm discord VersLugia#9038 
-
 # Config:
 ```yml
 class_broadcast:
