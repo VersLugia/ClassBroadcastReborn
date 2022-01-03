@@ -19,3 +19,5 @@ class_broadcast:
     Scp173: Haha matthew goes brrrr
 ```
 ![img](https://img.shields.io/github/downloads/VersLugia/ClassBroadcastReborn/total?style=for-the-badge) - the newest version downloads
+
+original plugin: `An4r3w#8905`
