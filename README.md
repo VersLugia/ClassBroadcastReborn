@@ -1,5 +1,5 @@
 # ClassBcReborn v1.1.0
-Send bc or hint to every class on spawn
+Send bc, hint or report window to every class on spawn
 
 `required Exiled 4.0`
 
